@@ -2,7 +2,7 @@ import React from "react";
 import Button from "../components/Button";
 import { ArrowRight } from "lucide-react";
 import AnimatedBorderButton from "../components/AnimatedBorderButton";
-
+import { socialLinks } from "../data";
 export const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
@@ -63,7 +63,7 @@ export const Hero = () => {
                   with precision
                 </span>
               </h1>
-              <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-400">
+              <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
                 Hi, I'm Abubakar Passum A. Gaffar, an AI engineer and software
                 engineer crafting intelligent systems and scalable applications.
                 I specialize in building agentic AI solutions and modern web
@@ -74,7 +74,7 @@ export const Hero = () => {
               </p>
             </div>
             {/* CTA Button */}
-            <div className="flex gap-2">
+            <div className="flex gap-2 animate-fade-in animation-delay-300">
               <Button size="lg">
                 Contact Me <ArrowRight className="w-5 h-5" />
               </Button>
@@ -85,6 +85,24 @@ export const Hero = () => {
               >
                 Download Resume
               </AnimatedBorderButton>
+            </div>
+            {/* Social Links  */}
+            <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
+              {/* Add your social media icons and links here */}
+              <span className="text-sm text-muted-foreground">Follow Me:</span>
+              <div className="flex gap-4 mt-2">
+                {socialLinks.map((link, index) => (
+                  <a
+                    key={index}
+                    href={link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300"
+                  >
+                    <link.icon className="w-5 h-5" />
+                  </a>
+                ))}
+              </div>
             </div>
           </div>
           {/* Right column - Text content */}

@@ -19,7 +19,7 @@ const AnimatedBorderButton = ({
   onClick,
 }: AnimatedBorderButtonProps) => {
   const baseClasses =
-    "relative rounded-full font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-primary shadow-lg overflow-hidden group";
+    "relative rounded-full font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-primary shadow-lg overflow-hidden group cursor-pointer";
 
   const sizeClasses = {
     sm: "px-4 py-2 text-sm",
