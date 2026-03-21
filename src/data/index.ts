@@ -59,8 +59,52 @@ const highlghts=[
     }
 ]
 
+const projects = [
+  {
+    title: "Ecommerce Platform",
+    description:
+      "A full-featured ecommerce platform with user authentication, product management, and a responsive design, built using React and Node.js.",
+    image: "/project2.png",
+    tags: ["Next", "Neon", "Prisma", "PostgreSQL", "TypeScript"],
+    link: "#",
+    githuburl: "#",
+    category: "Frontend"
+  },
+  {
+    title: "Fintech Dashboard",
+    description:
+      "A real-time dashboard for monitoring financial data and market trends, built with React and integrated with various financial APIs.",
+    image: "/project1.png",
+    tags: ["React", "D3.js", "Node.js", "Express", "MongoDB"],
+    link: "#",
+    githuburl: "#",
+    category: "Frontend"
+  },
+  {
+    title: "AI Dashboard",
+    description:
+      "A real-time dashboard for monitoring financial data and market trends, built with React and integrated with various financial APIs.",
+    image: "/project3.png",
+    tags: ["React", "D3.js", "Node.js", "Express", "MongoDB"],
+    link: "#",
+    githuburl: "#",
+    category: "AI"
+  },
+  {
+    title: "AI Dashboard",
+    description:
+      "A real-time dashboard for monitoring financial data and market trends, built with React and integrated with various financial APIs.",
+    image: "/project4.png",
+    tags: ["React", "D3.js", "Node.js", "Express", "MongoDB"],
+    link: "#",
+    githuburl: "#",
+    category: "AI"
+  },
+];
+
 export {
   socialLinks,
   technologies,
-  highlghts
+  highlghts,
+  projects
 }
