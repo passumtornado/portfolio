@@ -1,4 +1,4 @@
-import { Code2, Github, Lightbulb, Linkedin, Rocket, Twitter, Users } from "lucide-react";
+import { Code2, Github, Lightbulb, Linkedin, Mail, MapPin, Phone, Rocket, Twitter, Users } from "lucide-react";
 
 const socialLinks = [
   {
@@ -102,9 +102,32 @@ const projects = [
   },
 ];
 
+const contactInfo = [
+    {
+        icon:Mail,
+        label:"Email",
+        value:"passumtornado10@gmail.com",
+        href:"mailto:passumntornado10@gmail.com"
+    },
+    {
+        icon:Phone,
+        label:"Phone",
+        value:"+46 76 435 8323",
+        href:"tel:+46764358323"
+    },
+    {
+        icon:MapPin,
+        label:"Location",
+        value:"Linköping, Sweden",
+        href:"https://www.google.com/maps/place/Linköping,+Sweden"
+    }
+]
+
+
 export {
   socialLinks,
   technologies,
   highlghts,
-  projects
+  projects,
+  contactInfo
 }
