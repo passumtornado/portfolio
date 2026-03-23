@@ -1,4 +1,4 @@
-import React from "react";
+
 import Button from "../components/Button";
 import { ArrowRight, ChevronDown } from "lucide-react";
 import AnimatedBorderButton from "../components/AnimatedBorderButton";

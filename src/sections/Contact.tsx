@@ -3,7 +3,7 @@ import { contactInfo } from "../data";
 import Button from "../components/Button";
 import { AlertCircle, CheckCircle, Send } from "lucide-react";
 import emailjs from "@emailjs/browser";
-import Spinner from "../components/Spinner";
+
 
 export const Contact = () => {
   const [formData, setFormData] = useState({
