@@ -1,8 +1,8 @@
-
 import Button from "../components/Button";
 import { ArrowRight, ChevronDown } from "lucide-react";
 import AnimatedBorderButton from "../components/AnimatedBorderButton";
 import { socialLinks, technologies } from "../data";
+import resumePDF from "../assets/resume/Abubakar_Passum_Abdul_Gaffar_resume.pdf";
 export const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
@@ -79,12 +79,14 @@ export const Hero = () => {
                 Contact Me <ArrowRight className="w-5 h-5" />
               </Button>
               {/* Animated Border Button to download resume */}
-              <AnimatedBorderButton
-                size="lg"
-                onClick={() => window.open("/resume.pdf", "_blank")}
+              <a
+                href={resumePDF}
+                download="Abubakar_Passum_Abdul_Gaffar_resume.pdf"
               >
-                Download Resume
-              </AnimatedBorderButton>
+                <AnimatedBorderButton size="lg">
+                  Download Resume
+                </AnimatedBorderButton>
+              </a>
             </div>
             {/* Social Links  */}
             <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
@@ -154,11 +156,13 @@ export const Hero = () => {
         </div>
       </div>
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-fade-in animation-delay-800">
-       <a href="#about" className="flex flex-col items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
-        <span className="text-xs uppercase tracking-wider">Scroll</span>
-        <ChevronDown className="w-6 h-6 animate-bounce" />
-
-       </a>
+        <a
+          href="#about"
+          className="flex flex-col items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
+        >
+          <span className="text-xs uppercase tracking-wider">Scroll</span>
+          <ChevronDown className="w-6 h-6 animate-bounce" />
+        </a>
       </div>
     </section>
   );
