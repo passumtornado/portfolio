@@ -1,13 +1,13 @@
 import React from 'react'
 
-type ButtonProps = {
+type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
     className?: string;
     size: 'sm' | 'default' | 'lg';
     children: React.ReactNode;
 }
 
 
-const Button = ({className,size,children}: ButtonProps) => {
+const Button = ({type = "button", className, size, children,...props}: ButtonProps) => {
     const baseClasses = "relative overflow-hidden rounded-full font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-primary bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg shadow-primary/50 cursor-pointer";
     const sizeClasses = {
         sm: 'px-4 py-2 text-sm',
@@ -17,9 +17,9 @@ const Button = ({className,size,children}: ButtonProps) => {
     }
     const classess =`${baseClasses} ${sizeClasses[size] || sizeClasses.default} ${className || ''}`;
   return (
-    <div className={classess}>
+    <button type={type} className={classess} {...props}>
       <span className="relative flex items-center justify-center gap-2">{children}</span>
-    </div>
+    </button>
   );
 }
 
