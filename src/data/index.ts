@@ -1,4 +1,4 @@
-import { Code2, Github, Lightbulb, Linkedin, Mail, MapPin, Phone, Rocket, Twitter, Users } from "lucide-react";
+import { Code2, Github, Lightbulb, Linkedin, Mail, MapPin, Phone, Rocket, Users } from "lucide-react";
 
 const socialLinks = [
   {
